@@ -1,11 +1,9 @@
-CREATE TABLE Billing (
-    bill_id INT AUTO_INCREMENT,
+CREATE TABLE Billing(
+    bill_id INT PRIMARY KEY,
     patient_id INT,
     bill_date DATE,
-    amount_due DECIMAL(10, 2),
+    amount_due FLOAT,
     due_date DATE,
     payment_status VARCHAR(50),
-    PRIMARY KEY (bill_id),
-    FOREIGN KEY (patient_id) REFERENCES Patients(patient_id)
-);
-
+    FOREIGN KEY(patient_id) REFERENCES Patients(patient_id)
+    );
