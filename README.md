@@ -10,7 +10,7 @@ The database consists of five tables:
 
 1. Doctors: Stores doctor details (ID, name, specialty, contact info, availability)
 2. Patients: Stores patient information (ID, name, date of birth, gender, contact info)
-3. Appointments: Holds appointment details (ID, doctor ID, patient ID, date, time, description)
+3. Appointments: Holds appointment details (ID, doctor ID, patient ID, date_time, description)
 4. Medical Records: Contains patient medical records (ID, patient ID, doctor ID, visit date, diagnosis, medication, notes)
 5. Billing: Maintains billing information (ID, patient ID, bill date, amount due, due date, payment status)
 
