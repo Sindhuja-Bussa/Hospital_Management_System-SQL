@@ -1,10 +1,8 @@
-CREATE TABLE Patients (
-    patient_id INT AUTO_INCREMENT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
+CREATE TABLE Patients(
+    patient_id INT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
     dob DATE,
     gender CHAR(1),
-    contact_info VARCHAR(100),
-    PRIMARY KEY (patient_id)
-);
-
+    contact_info VARCHAR(100)
+    );
